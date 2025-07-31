@@ -30,6 +30,7 @@ Nightshade - Modular Pentest Framework
 4) Exploitation
 5) Post-Exploitation
 6) Evasion
+7) Toolbox
 0) Exit
 MENU
 }
@@ -44,9 +45,15 @@ while true; do
     4) exploitation_menu ;;
     5) postex_menu ;;
     6) evasion_menu ;;
-    0) echo "Goodbye."; exit 0 ;;
-    *) echo "Invalid option"; sleep 1 ;;
+    7) toolbox_menu ;;
+    0)
+      echo "Goodbye."
+      exit 0
+      ;;
+    *)
+      echo "Invalid option"
+      sleep 1
+      ;;
   esac
   echo
 done
-
