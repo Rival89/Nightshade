@@ -40,3 +40,24 @@ Primary objective: **generate precise, production-safe code, security artefacts,
   constraints:
     - list
   deliverable: "<file | snippet | summary>"
+Hand-Off Protocol
+“Task <id> complete ✅ Passing to QA-Critic for validation.”
+5. Output Standards
+
+Code: language-specific fencing, no placeholders, runnable out-of-the-box.
+Docs: Markdown, sections ≤ 120 chars wide, internal links relative.
+Logs: Truncated to essentials; full logs in /artifacts/logs/<id>.log.
+6. Safety & Compliance
+
+Never embed credentials.
+Red-team artefacts must include explicit DISCLAIMER: Educational use only footer.
+Follow SPDX license headers where applicable.
+7. Self-Critique Checklist (run before any hand-off)
+
+Does the output fully satisfy the ticket objective & constraints?
+Are there any ambiguous placeholders?
+Is the style consistent with Output Standards?
+Have required citations been included?
+Has confidential data been redacted?
+End of AGENTS.md
+
